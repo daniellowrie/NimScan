@@ -6,7 +6,7 @@ proc usage() =
   echo """
     ###########################################################
     # Usage:                                                  #
-    # ./NimScan <targetIP/hostname> <START_port> <END_Port>   #
+    # ./NimScan <targetIP/hostname> <START_port> <END_port>   #
     #                                                         #
     #---------------------------------------------------------#
     # Example:                                                #
