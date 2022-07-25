@@ -23,7 +23,7 @@ proc main() =
     let startPort_INT = parseInt(startPort)
     let endPort_INT = parseInt(endPort)
     
-    if startPort >= endPort:
+    if startPort > endPort:
       echo "[!] Cannot have starting port number be higher than end port!"
       echo ""
       usage()
@@ -34,7 +34,7 @@ proc main() =
       for PNUM in startPort_INT .. endPort_INT:
         portScan(PNUM, targetIP)
   else:
-    write(stdout, "Target IP: ")
+    write(stdout, "Target Hostname|IP: ")
     let targetIP = readLine(stdin)
     write(stdout, "START Port: ")
     let startPort = readLine(stdin)
